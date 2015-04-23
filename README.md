@@ -58,6 +58,6 @@ flag_icon(:it, id: 'my-flag', class: 'strong')
 
 ### Thanks
 
-* [https://github.com/lipis/flag-icon-css](https://github.com/lipis/flag-icon-css) for flags-ico-css
+* [https://github.com/lipis/flag-icon-css](https://github.com/lipis/flag-icon-css) for flags-icon-css
 * [font-awesome-sass gem](https://github.com/FortAwesome/font-awesome-sass) for inspiration
 * [bootstrap-sass gem](https://github.com/twbs/bootstrap-sass) for inspiration
