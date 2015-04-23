@@ -10,7 +10,7 @@ This project integrates [https://github.com/lipis/flag-icon-css](https://github.
 In your Gemfile include:
 
 ```ruby
-gem 'flag-icon-sass', '~> 0.1'
+gem 'flag-icon-sass'
 ```
 
 And then execute:
