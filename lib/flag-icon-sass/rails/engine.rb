@@ -2,10 +2,9 @@ module FlagIconSass
   module Rails
     class Engine < ::Rails::Engine
       initializer 'flag-icon-sass.assets.precompile' do |app|
-        %w(stylesheets images).each do |sub|
-          app.config.assets.paths << root.join('assets', sub).to_s
+        Dir.glob("#{root}/app/assets/images/flags/**/").each do |path|
+          config.assets.paths << path
         end
-        app.config.assets.precompile << /\.(?:svg)\z/
       end
     end
   end
