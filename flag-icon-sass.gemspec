@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   EOF
   s.license     = "MIT"
 
-  s.files = Dir["{assets,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{app,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_runtime_dependency 'sass', '~> 3.2'
 end
