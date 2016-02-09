@@ -3,7 +3,7 @@ module FlagIconSass
     class Engine < ::Rails::Engine
       initializer 'flag-icon-sass.assets.precompile' do |app|
         Dir.glob("#{root}/app/assets/images/flags/**/").each do |path|
-          config.assets.paths << path
+          app.config.assets.paths << path
         end
       end
     end
