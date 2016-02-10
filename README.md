@@ -22,7 +22,7 @@ bundle install
 Import the FlagIconsRails styles in your `app/assets/stylesheets/application.scss`.
 
 ```scss
-@import "flag-icons-rails";
+@import "flag-icon";
 ```
 
 #### Plain usage
