@@ -1,4 +1,4 @@
-FlagIconSass
+FlagIconsRails
 ---
 
 This project integrates [https://github.com/lipis/flag-icon-css](https://github.com/lipis/flag-icon-css) in a Ruby Gem but only the sass version.
@@ -10,7 +10,7 @@ This project integrates [https://github.com/lipis/flag-icon-css](https://github.
 In your Gemfile include:
 
 ```ruby
-gem 'flag-icon-sass'
+gem 'flag-icons-rails'
 ```
 
 And then execute:
@@ -19,10 +19,10 @@ And then execute:
 bundle install
 ```
 
-Import the FlagIconSass styles in your `app/assets/stylesheets/application.scss`.
+Import the FlagIconsRails styles in your `app/assets/stylesheets/application.scss`.
 
 ```scss
-@import "flag-icon-sass";
+@import "flag-icons-rails";
 ```
 
 #### Plain usage
@@ -58,6 +58,5 @@ flag_icon(:it, id: 'my-flag', class: 'strong')
 
 ### Thanks
 
-* [https://github.com/lipis/flag-icon-css](https://github.com/lipis/flag-icon-css) for flags-icon-css
-* [font-awesome-sass gem](https://github.com/FortAwesome/font-awesome-sass) for inspiration
-* [bootstrap-sass gem](https://github.com/twbs/bootstrap-sass) for inspiration
+* [lipis/flag-icon-css](https://github.com/lipis/flag-icon-css) for flags-icon-css
+* [flag-icon-sass gem](https://github.com/cfiorini/flag-icon-sass) for gem this one is based on
