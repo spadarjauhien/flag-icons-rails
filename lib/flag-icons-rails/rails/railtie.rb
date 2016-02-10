@@ -1,9 +1,9 @@
-require "flag-icon-sass/rails/helpers"
+require "flag-icons-rails/rails/helpers"
 
-module FlagIconSass
+module FlagIconsRails
     module Rails
       class Railtie < ::Rails::Railtie
-        initializer "flag-icon-sass.view_helpers" do
+        initializer 'flag-icons-rails.view_helpers' do
           ActionView::Base.send :include, ViewHelpers
         end
       end

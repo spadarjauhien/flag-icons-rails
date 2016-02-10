@@ -1,4 +1,4 @@
-module FlagIconSass
+module FlagIconsRails
   module Rails
     module ViewHelpers
       def flag_icon(cca2, squared = false, html_options = {})
