@@ -1,5 +1,7 @@
-flag-icons-rails [![Gem Version](http://img.shields.io/gem/v/flag-icons-rails.svg)](https://rubygems.org/gems/flag-icons-rails) [![Gem Downloads](http://ruby-gem-downloads-badge.herokuapp.com/flag-icons-rails)](https://rubygems.org/gems/flag-icons-rails) [![Code Climate](https://codeclimate.com/github/eugenegarl/flag-icons-rails/badges/gpa.svg)](https://codeclimate.com/github/eugenegarl/flag-icons-rails)
+flag-icons-rails 
 ---
+[![Gem Version](http://img.shields.io/gem/v/flag-icons-rails.svg)](https://rubygems.org/gems/flag-icons-rails) [![Gem Downloads](http://ruby-gem-downloads-badge.herokuapp.com/flag-icons-rails)](https://rubygems.org/gems/flag-icons-rails) [![Gem Total Downloads](http://ruby-gem-downloads-badge.herokuapp.com/flag-icons-rails?type=total)](https://rubygems.org/gems/flag-icons-rails) [![Code Climate](https://codeclimate.com/github/eugenegarl/flag-icons-rails/badges/gpa.svg)](https://codeclimate.com/github/eugenegarl/flag-icons-rails)
+
 **flag-icons-rails** provides [flag-icon-css](https://github.com/lipis/flag-icon-css) - a collection of all country flags in SVG - as a Ruby gem for use with the asset pipeline.
 
 ### Installation
