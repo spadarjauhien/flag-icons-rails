@@ -16,6 +16,8 @@ and then execute:
 bundle install
 ```
 
+Do not add gem to `assets` section if you want to use [ `flag_icon` rails helper](#rails-helper-usage).
+
 ### Usage
 
 In your `application.css`, include the file:

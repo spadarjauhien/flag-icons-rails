@@ -2,8 +2,8 @@ module FlagIconsRails
   module Rails
     class Engine < ::Rails::Engine
       initializer 'flag-icons-rails.assets.precompile' do |app|
-        Dir.glob("#{root}/app/assets/images/flags/**/").each do |path|
-          app.config.assets.paths << path
+        %w(stylesheets images).each do |sub|
+          app.config.assets.paths << root.join('app', 'assets', sub).to_s
         end
       end
     end
