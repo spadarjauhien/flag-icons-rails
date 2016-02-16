@@ -18,4 +18,11 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,lib}/**/*", 'MIT-LICENSE', 'Rakefile', 'README.md']
 
   s.add_runtime_dependency 'sass', '~> 3.2'
+
+  # Testing dependencies
+  s.add_development_dependency 'minitest', '~> 5.8'
+  s.add_development_dependency 'minitest-reporters', '~> 1.1'
+  # Dummy Rails app dependencies
+  s.add_development_dependency 'actionpack', '~> 4.2.5'
+  s.add_development_dependency 'activesupport', '~> 4.2.5'
 end
