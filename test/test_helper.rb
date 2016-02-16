@@ -1,13 +1,8 @@
-require 'minitest/autorun'
-require 'minitest/reporters'
-Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
+require 'minitest/spec'
 
-require 'active_support/core_ext/kernel/reporting'
+require File.expand_path('../dummy/config/environment.rb',  __FILE__)
+require 'rails/test_help'
 
-Dir['test/support/**/*.rb'].each do |file|
-  # strip ^test/ and .rb$
-  file = file[5..-4]
-  require_relative File.join('.', file)
-end
+ENV['RAILS_ENV'] = 'test'
 
-GEM_PATH = File.expand_path('../', File.dirname(__FILE__))
+Rails.backtrace_cleaner.remove_silencers!
