@@ -3,22 +3,13 @@ module FlagIconsRails
     def load!
       if rails?
         register_rails_engine
+      else
+        configure_sass
       end
-
-      configure_sass
     end
 
-    # Paths
-    def gem_path
-      @gem_path ||= File.expand_path('..', File.dirname(__FILE__))
-    end
-
-    def stylesheets_path
-      File.join(assets_path, 'stylesheets')
-    end
-
-    def assets_path
-      @assets_path ||= File.join(gem_path, 'app', 'assets')
+    def root
+      @root ||= File.expand_path('..', File.dirname(__FILE__))
     end
 
     def rails?
@@ -26,6 +17,14 @@ module FlagIconsRails
     end
 
     private
+
+    def stylesheets_path
+      File.join(assets_path, 'stylesheets')
+    end
+
+    def assets_path
+      @assets_path ||= File.join(root, 'app', 'assets')
+    end
 
     def configure_sass
       require 'sass'

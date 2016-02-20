@@ -1,6 +1,6 @@
-$:.push File.expand_path("../lib", __FILE__)
+$:.push File.expand_path('../lib', __FILE__)
 
-require "flag-icons-rails/version"
+require 'flag-icons-rails/version'
 
 Gem::Specification.new do |s|
   s.name        = 'flag-icons-rails'
@@ -15,7 +15,12 @@ Gem::Specification.new do |s|
   EOF
   s.license     = 'MIT'
 
-  s.files = Dir["{app,lib}/**/*", 'MIT-LICENSE', 'Rakefile', 'README.md']
+  s.files = Dir['{app,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
   s.add_runtime_dependency 'sass', '~> 3.2'
+
+  s.add_development_dependency 'railties', '>= 3.2', '< 5.1'
+  s.add_development_dependency 'activesupport'
+  s.add_development_dependency 'sass-rails'
+  s.add_development_dependency 'pry'
 end
