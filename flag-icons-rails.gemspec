@@ -5,17 +5,16 @@ require 'flag-icons-rails/version'
 Gem::Specification.new do |s|
   s.name        = 'flag-icons-rails'
   s.version     = FlagIconsRails::VERSION
-  s.authors     = ['Eugene Garlukovich']
-  s.email       = ['eugene.garlukovich@gmail.com']
-  s.homepage    = 'https://github.com/eugenegarl/flag-icons-rails'
-  s.summary     = 'flag-icon-css sass gem for use in Ruby/Rails projects'
-  s.description = <<-EOF
-    'flag-icons-rails' gem allows you to integrate sass version of
-    https://github.com/lipis/flag-icon-css into your Ruby/Rails project.
-  EOF
+  s.authors     = ['Evgeny Garlukovich']
+  s.email       = ['evgeny.garlukovich@gmail.com']
+  s.homepage    = 'https://github.com/evgenygarl/flag-icons-rails'
+  s.summary     = 'Gem to use `flag-icon-css` library in your Rails projects'
+  s.description = 'Gem allows to use `flag-icon-css` - a collection of all country flags in SVG - in your Rails projects'
   s.license     = 'MIT'
 
-  s.files = Dir['{app,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
+  s.files       = Dir['{app,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
+  s.platform    = Gem::Platform::RUBY
+  s.required_ruby_version = '>= 2.0'
 
   s.add_runtime_dependency 'sass', '~> 3.2'
 
