@@ -1,0 +1,28 @@
+AllCops:
+  Include:
+    - Rakefile
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 20
+
+Style/Documentation:
+  Enabled: false
+
+Style/DotPosition:
+  EnforcedStyle: leading
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: space
+  EnforcedStyleForEmptyBraces: no_space
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Style/FileName:
+  Enabled: false
