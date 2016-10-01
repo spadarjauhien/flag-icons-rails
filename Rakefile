@@ -1,7 +1,9 @@
 #!/usr/bin/env rake
 require 'bundler/gem_tasks'
 require 'rake/testtask'
+require 'rubocop/rake_task'
 
+RuboCop::RakeTask.new
 Rake::TestTask.new(:test) do |t|
   t.libs << 'lib'
   t.libs << 'test'
@@ -9,4 +11,5 @@ Rake::TestTask.new(:test) do |t|
   t.verbose = false
 end
 
-task default: :test
+task(:default).clear
+task default: %i(test rubocop)
