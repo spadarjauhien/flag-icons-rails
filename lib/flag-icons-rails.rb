@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FlagIconsRails
   class << self
     def load!

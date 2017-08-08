@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FlagIconsRails
   module Rails
     module ViewHelpers
@@ -19,11 +21,14 @@ module FlagIconsRails
       private
 
       def flag_icon_content_class(country_code, squared, custom_css_class)
-        content_class = "flag-icon flag-icon-#{country_code}"
-        content_class << ' flag-icon-squared' if squared == true
-        content_class << " #{custom_css_class}" if custom_css_class
+        content_classes = [
+          'flag-icon',
+          "flag-icon-#{country_code}",
+          (squared == true ? 'flag-icon-squared' : ''),
+          custom_css_class
+        ]
 
-        content_class
+        content_classes.join(' ').strip
       end
     end
   end
