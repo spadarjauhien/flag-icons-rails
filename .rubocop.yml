@@ -4,6 +4,8 @@ AllCops:
 
 Metrics/LineLength:
   Max: 120
+  Exclude:
+    - flag-icons-rails.gemspec
 
 Metrics/MethodLength:
   Max: 20
@@ -11,13 +13,10 @@ Metrics/MethodLength:
 Style/Documentation:
   Enabled: false
 
-Style/DotPosition:
+Layout/DotPosition:
   EnforcedStyle: leading
 
-Style/FrozenStringLiteralComment:
-  Enabled: false
-
-Style/SpaceInsideHashLiteralBraces:
+Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: space
   EnforcedStyleForEmptyBraces: no_space
 
@@ -26,3 +25,10 @@ Style/StringLiterals:
 
 Style/FileName:
   Enabled: false
+
+Lint/ScriptPermission:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - test/**/*
