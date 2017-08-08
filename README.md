@@ -1,7 +1,9 @@
 flag-icons-rails
 ---
 [![Gem Version](http://img.shields.io/gem/v/flag-icons-rails.svg)](https://rubygems.org/gems/flag-icons-rails) [![Gem Downloads](http://ruby-gem-downloads-badge.herokuapp.com/flag-icons-rails)](https://rubygems.org/gems/flag-icons-rails) [![Gem Total Downloads](http://ruby-gem-downloads-badge.herokuapp.com/flag-icons-rails?type=total)](https://rubygems.org/gems/flag-icons-rails)  
-[![Build Status](https://travis-ci.org/evgenygarl/flag-icons-rails.svg?branch=master)](https://travis-ci.org/evgenygarl/flag-icons-rails) [![Code Climate](https://codeclimate.com/github/eugenegarl/flag-icons-rails/badges/gpa.svg)](https://codeclimate.com/github/eugenegarl/flag-icons-rails) [![Codacy Badge](https://api.codacy.com/project/badge/grade/074de19098db4278a9d6e30a39b16cc1)](https://www.codacy.com/app/eugene-garlukovich-github/flag-icons-rails)
+[![Build Status](https://travis-ci.org/evgenygarl/flag-icons-rails.svg?branch=master)](https://travis-ci.org/evgenygarl/flag-icons-rails) [![Code Climate](https://codeclimate.com/github/evgenygarl/flag-icons-rails/badges/gpa.svg)](https://codeclimate.com/github/evgenygarl/flag-icons-rails) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1e98c35d3569411797833f2b25bce052)](https://www.codacy.com/app/evgenygarl/flag-icons-rails)
+
+
 
 **flag-icons-rails** provides [flag-icon-css](https://github.com/lipis/flag-icon-css) - a collection of all country flags in SVG - as a Ruby gem for use with the asset pipeline.
 
