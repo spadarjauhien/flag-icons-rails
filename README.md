@@ -64,13 +64,13 @@ flag_icon(:by)
 ```
 
 ```ruby
-flag_icon(:by, true)
+flag_icon(:by, squared: true)
 # => <span class="flag-icon flag-icon-by flag-icon-squared"></span>
 ```
 
 ```ruby
 flag_icon(:by, id: 'my-flag', class: 'strong')
-# => <span id="my-flag" class="flag-icon flag-icon-by flag-icon-squared strong"></span>
+# => <span id="my-flag" class="flag-icon flag-icon-by strong"></span>
 ```
 
 ### Thanks
