@@ -28,5 +28,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'minitest-have_tag', '~> 0.1.0'
   s.add_development_dependency 'minitest-emoji', '~> 2.0.0'
   s.add_development_dependency 'yard', '~> 0.9.5'
-  s.add_development_dependency 'rubocop', '~> 0.49.1'
+  s.add_development_dependency 'rubocop', '~> 0.50.0'
 end

@@ -15,10 +15,6 @@ module Dummy
 
     config.active_support.deprecation = :stderr
     config.eager_load = false
-    config.active_support.test_order = begin
-                                         :random
-                                       rescue
-                                         nil
-                                       end
+    config.active_support.test_order = :random
   end
 end
