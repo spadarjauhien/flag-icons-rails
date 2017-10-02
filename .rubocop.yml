@@ -2,17 +2,6 @@ AllCops:
   Include:
     - Rakefile
 
-Metrics/LineLength:
-  Max: 120
-  Exclude:
-    - flag-icons-rails.gemspec
-
-Metrics/MethodLength:
-  Max: 20
-
-Style/Documentation:
-  Enabled: false
-
 Layout/DotPosition:
   EnforcedStyle: leading
 
@@ -20,15 +9,30 @@ Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: space
   EnforcedStyleForEmptyBraces: no_space
 
-Style/StringLiterals:
-  EnforcedStyle: single_quotes
-
-Style/FileName:
-  Enabled: false
-
 Lint/ScriptPermission:
   Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - flag-icons-rails.gemspec
 
 Metrics/BlockLength:
   Exclude:
     - test/**/*
+
+Metrics/MethodLength:
+  Max: 20
+
+Naming/FileName:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - lib/flag-icons-rails/version.rb
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
