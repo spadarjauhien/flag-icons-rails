@@ -30,9 +30,5 @@ Naming/FileName:
 Style/Documentation:
   Enabled: false
 
-Style/FrozenStringLiteralComment:
-  Exclude:
-    - lib/flag-icons-rails/version.rb
-
 Style/StringLiterals:
   EnforcedStyle: single_quotes
