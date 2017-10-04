@@ -5,4 +5,5 @@ rvm:
   - 2.4.0
   - 2.4.1
 script:
-  - bundle exec rake
+  - bin/rake test
+  - bin/rubocop -c rubocop.yml
