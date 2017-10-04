@@ -6,4 +6,4 @@ rvm:
   - 2.4.1
 script:
   - bin/rake test
-  - bin/rubocop -c rubocop.yml
+  - bin/rubocop -c .rubocop.yml
