@@ -1,4 +1,4 @@
 module FlagIconsRails
-  VERSION = '2.5.0'.freeze
-  FLAG_ICONS_CSS_VERSION = '2.5.0'.freeze
+  VERSION = '3.1.0'.freeze
+  FLAG_ICONS_CSS_VERSION = '3.1.0'.freeze
 end
