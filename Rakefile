@@ -5,7 +5,10 @@ require 'bundler/gem_tasks'
 require 'rake/testtask'
 require 'rubocop/rake_task'
 
-RuboCop::RakeTask.new
+RuboCop::RakeTask.new(:rubocop) do |t|
+  t.options = ['-c', '.rubocop.yml']
+end
+
 Rake::TestTask.new(:test) do |t|
   t.libs << 'lib'
   t.libs << 'test'
