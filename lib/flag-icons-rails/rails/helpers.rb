@@ -23,7 +23,7 @@ module FlagIconsRails
       def flag_icon_content_class(country_code, squared, custom_css_class)
         content_classes = [
           'flag-icon',
-          "flag-icon-#{country_code}",
+          "flag-icon-#{country_code.downcase}",
           (squared == true ? 'flag-icon-squared' : ''),
           custom_css_class
         ]
