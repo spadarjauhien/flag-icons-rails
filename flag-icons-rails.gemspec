@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency 'sass', '~> 3.2'
 
-  s.add_development_dependency 'railties', '>= 3.2', '< 5.1'
+  s.add_development_dependency 'railties', '>= 3.2', '< 6'
   s.add_development_dependency 'activesupport'
   s.add_development_dependency 'sass-rails'
   s.add_development_dependency 'pry'
