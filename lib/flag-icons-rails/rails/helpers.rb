@@ -30,7 +30,7 @@ module FlagIconsRails
           custom_css_class
         ]
 
-        content_classes.join(' ').strip
+        content_classes.join(' ').squish
       end
     end
   end
