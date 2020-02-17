@@ -9,13 +9,15 @@ module FlagIconsRails
       #   country code
       # @param [true, false] :squared Optional. It is used to determine squared or rectangle version
       #   of flag will be rendered, defaults to +false+
+      # @param [Symbol|String] element Optional. HTML element to generate and apply classes to,
+      #   defaults to +:span+
       # @param [Hash] html_options Optional. HTML options applied to rendered span, defaults to +{}+
       #
       # @return [String] +span+ with requested HTML options to display country flag
-      def flag_icon(country_code, squared: false, **html_options)
+      def flag_icon(country_code, squared: false, element: :span, **html_options)
         html_options[:class] = flag_icon_content_class(country_code, squared, html_options[:class])
 
-        content_tag(:span, nil, html_options)
+        content_tag(element, nil, html_options)
       end
 
       private

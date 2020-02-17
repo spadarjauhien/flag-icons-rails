@@ -64,6 +64,11 @@ flag_icon(:by)
 ```
 
 ```ruby
+flag_icon(:by, element: :div)
+# => <div class="flag-icon flag-icon-by"></div>
+```
+
+```ruby
 flag_icon(:by, squared: true)
 # => <span class="flag-icon flag-icon-by flag-icon-squared"></span>
 ```
