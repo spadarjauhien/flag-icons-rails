@@ -3,12 +3,12 @@
 module FlagIconsRails
   module Rails
     module ViewHelpers
-      # Helper to render flag icon
+      # Helper to render flag icon as single HTML element
       #
-      # @param [Symbol|String] country_code {https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 ISO 3166-1 alpha-2}
-      #   country code
-      # @param [true, false] :squared Optional. It is used to determine squared or rectangle version
-      #   of flag will be rendered, defaults to +false+
+      # @param [Symbol|String] country_code ISO 3166-1 alpha-2 country code, see:
+      #   https://www.iso.org/obp/ui/#search
+      # @param [true, false] squared Optional. It is used to determine if square or rectangular
+      #   version of flag will be rendered, defaults to +false+
       # @param [Symbol|String] element Optional. HTML element to generate and apply classes to,
       #   defaults to +:span+
       # @param [Hash] html_options Optional. HTML options applied to rendered span, defaults to +{}+
