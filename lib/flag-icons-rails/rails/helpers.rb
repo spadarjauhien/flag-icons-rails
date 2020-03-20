@@ -11,7 +11,7 @@ module FlagIconsRails
       #   version of flag will be rendered, defaults to +false+
       # @param [Symbol|String] element Optional. HTML element to generate and apply classes to,
       #   defaults to +:span+
-      # @param [Hash] html_options Optional. HTML options applied to rendered span, defaults to +{}+
+      # @param [Hash] html_options Optional. HTML options applied to rendered element, defaults to +{}+
       #
       # @return [String] +element+ with requested HTML options to display country flag
       def flag_icon(country_code, squared: false, element: :span, **html_options)
